@@ -14,7 +14,7 @@
     <form method="GET" action="pswgenerator.php" class="row g-2">
         <div class="col-auto">
             <label for="inputLength" class="visually-hidden">Password Length</label>
-            <input type="password" name="length" class="form-control" id="inputLength">
+            <input type="text" name="length" class="form-control" id="inputLength">
         </div>
         <div class="col-auto">
             <button type="submit" class="btn btn-primary mb-3">Confirm Length</button>
