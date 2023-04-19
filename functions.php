@@ -1,6 +1,6 @@
 <?php
 $pswLength = $_GET['length'];
-$repeatActive = $GET['repeat/N'];
+
 
 
 /*

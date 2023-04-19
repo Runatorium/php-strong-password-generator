@@ -23,17 +23,19 @@ include_once __DIR__ . './functions.php';
             <form method="GET" action="index.php" class="row g-2">
                 <div class="col-auto">
                     <label for="inputLength" class="visually-hidden">Password Length</label>
-                    <input type="text" name="length" class="form-control" id="inputLength">
+                    <input type="text" name="length" class="form-control" id="length">
                 </div>
                 <div class="col-auto">
                     <button type="submit" class="btn btn-primary mb-3">Confirm Length</button>
                 </div>
+
             </form>
         </div>
         <div>
             <h1 id="psw">
                 <?php echo generateRandomPassword($pswLength);
                 ?>
+
             </h1>
         </div>
     </div>
