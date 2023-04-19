@@ -6,11 +6,12 @@ function generateRandomPassword($pswLength)
     $pswComponents = '23456789abcdefghijkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ°"!@#$%^&*()_-';
     $finalPsw = '';
     for ($i = 0; $i < $pswLength; $i++) {
-        $finalPsw = $pswComponents[rand(0, strlen($pswComponents) - 1)];
-        echo $finalPsw;
+        $finalPsw .= $pswComponents[rand(0, strlen($pswComponents) - 1)];
     }
     return $finalPsw;
 }
+
+generateRandomPassword($pswLength);
 
 ?>
 
